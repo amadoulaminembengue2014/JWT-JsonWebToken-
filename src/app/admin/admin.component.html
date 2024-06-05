@@ -1,0 +1,14 @@
+<a class="nav-link active" aria-current="page" routerLink="/admin"
+     (*ngIf)="userService.roleMatch(['Admin'])">Admin Dashboard</a>
+
+
+<div (*ngIf)="isLoggedIn()">
+  <button (*ngIf)="isAdmin()" class="btn btn-success" routerLink="/AddNewUser">Add New User</button>
+</div>
+
+
+<div class="container mt-5">
+  <div class="card text-center" style="color: green; padding: 20px;">
+    <h1>You're Admin</h1>
+  </div>
+</div>

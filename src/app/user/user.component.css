@@ -1,0 +1,20 @@
+button{
+  position: absolute;
+  top: 7px;
+  right: 7px;
+}
+
+a{
+  position: absolute;
+  top: 20px;
+  left: 600px;
+  font-size: 31px;
+letter-spacing: 5.2px;
+word-spacing: 6px;
+color: #FFFFFF;
+font-weight: 500;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+}

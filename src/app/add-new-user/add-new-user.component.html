@@ -1,0 +1,71 @@
+<div class="container mt-5">
+  <div class="card p-2">
+    <div class="row">
+      <div class="col-6">
+
+        <form #nameForm="ngForm" (ngSubmit)="addName(nameForm)">
+
+          <div class="input-group flex-nowrap">
+            <span class="input-group-text" id="addon-wrapping"></span>
+            <label for="exampleInputPassword1">User Name</label>
+            <input
+              type="text"
+              class="form-control ms-4"
+              placeholder="Username"
+              [(ngModel)]="name.userName"
+              name="userName"
+            />
+          </div>
+          <br /><br />
+          <div class="input-group flex-nowrap">
+            <span class="input-group-text" id="addon-wrapping"></span>
+            <label for="exampleInputPassword1">User Description</label>
+            <input
+              type="text"
+              class="form-control ms-4"
+              placeholder="User Description"
+              [(ngModel)]="name.userFirstName"
+              name="userFirstName"
+            />
+          </div>
+          <br /><br />
+          <div class="input-group flex-nowrap">
+            <span class="input-group-text" id="addon-wrapping"></span>
+            <label for="exampleInputPassword1">User Actual</label>
+            <input
+              type="text"
+              class="form-control ms-4"
+              placeholder="User Actual"
+              [(ngModel)]="name.userLastName"
+              name="userLastName"
+            />
+          </div>
+          <br /><br />
+          <div class="input-group flex-nowrap">
+            <span class="input-group-text" id="addon-wrapping"></span>
+            <label for="exampleInputPassword1">User Discounted</label>
+            <input
+              type="text"
+              class="form-control ms-4"
+              placeholder="User Discounted"
+              [(ngModel)]="name.userPassword"
+              name="userPassword"
+            />
+          </div>
+          <br /><br />
+          <div align="end">
+            <button type="button" class="btn btn-secondary btn-lg ms-2" routerLink="/admin">
+              Clear
+            </button>
+            <button type="submit" class="btn btn-primary btn-lg ms-3">
+              Add User
+            </button>
+          </div>
+
+        </form>
+
+      </div>
+      <div class="col-6">image area</div>
+    </div>
+  </div>
+</div>
